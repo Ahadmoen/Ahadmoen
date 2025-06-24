@@ -37,6 +37,9 @@ I'm **Ahad Moeen** — an Associate Data Scientist passionate about **big data**
 ![Google BigQuery](https://img.shields.io/badge/-BigQuery-669DF6?style=flat&logo=googlecloud&logoColor=white)
 
 ---
+🔗 View more projects on my **[portfolio website](https://ahadmoeen.netlify.app/projects)**
+
+---
 
 ## 🤝 Let's Connect
 
