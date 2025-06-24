@@ -46,7 +46,7 @@ I'm **Ahad Moeen** — an Associate Data Scientist passionate about **big data**
 I'd love to connect and discuss data, analytics, and learning journeys!
 
 🔗 [LinkedIn](https://www.linkedin.com/in/ahad-moen/)  
-📫 **ahadmoen@gmail.com**  
+📫 **moenahad@gmail.com**  
 📍 Based in Pakistan | Remote Friendly
 
 ---
