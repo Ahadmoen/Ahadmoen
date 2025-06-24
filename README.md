@@ -7,7 +7,7 @@ I'm **Ahad Moeen** — an Associate Data Scientist passionate about **big data**
 
 ## 🚀 About Me
 
-- 🎓 Computer Science graduate with a strong foundation in **data analysis**, **visualization**, and **machine learning** and **Business Processes**
+- 🎓 Data Science graduate with a strong foundation in **data analysis**, **visualization**, and **machine learning** and **Business Processes**
 - 📊 Skilled in uncovering insights from raw data and presenting them through clear, compelling visuals
 - 🧠 Passionate about continuous learning in analytics, statistics, and ML, time-series forecasting
 - 🌱 Always exploring real-world projects and business problems using data-driven methods
