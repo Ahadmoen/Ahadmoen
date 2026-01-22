@@ -35,6 +35,12 @@ I'm **Ahad Moeen** — an Associate Data Scientist passionate about **big data**
 ![Excel](https://img.shields.io/badge/-Excel-217346?style=flat&logo=microsoft-excel&logoColor=white) 
 ![Apache Spark](https://img.shields.io/badge/-Apache%20Spark-E25A1C?style=flat&logo=apachespark&logoColor=white)
 ![Google BigQuery](https://img.shields.io/badge/-BigQuery-669DF6?style=flat&logo=googlecloud&logoColor=white)
+![n8n](https://img.shields.io/badge/-n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
+![Make](https://img.shields.io/badge/-Make-6D00FF?style=flat&logo=make&logoColor=white)
+![Google BigQuery](https://img.shields.io/badge/-Google%20BigQuery-4285F4?style=flat&logo=googlecloud&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+
 
 ---
 🔗 View more projects on my **[portfolio website](https://ahadmoeen.netlify.app/projects)**
