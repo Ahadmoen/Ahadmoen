@@ -59,17 +59,27 @@ WHERE  coffee_level > 0
 <!-- ═══════════════════════════ PIPELINE ═══════════════════════════ -->
 ## How I Work
 
-<table align="center">
-  <tr>
-    <td align="center" valign="top" width="270"><b>Sources</b><br/><sub>Shopify<br/>Meta · Google Ads<br/>GA4 · Klaviyo<br/>REST APIs</sub></td>
-    <td align="center" width="40"><b>➜</b></td>
-    <td align="center" valign="top" width="270"><b>Ingest</b><br/><sub>Python + REST<br/>n8n · Airflow<br/>PySpark<br/>&nbsp;</sub></td>
-    <td align="center" width="40"><b>➜</b></td>
-    <td align="center" valign="top" width="270"><b>Warehouse</b><br/><sub>BigQuery<br/>SQL models<br/>validation checks<br/>&nbsp;</sub></td>
-    <td align="center" width="40"><b>➜</b></td>
-    <td align="center" valign="top" width="270"><b>Decisions</b><br/><sub>Power BI · Looker<br/>Forecasts<br/>Gemini AI agent<br/>&nbsp;</sub></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="assets/pipeline-flow.svg" width="100%" alt="Sources → Ingest → Warehouse → Decisions" />
+</p>
+
+<!-- ═══════════════════════════ EXPERTISE ═══════════════════════════ -->
+## Core Expertise
+
+<p align="center">
+  <img src="assets/expertise-radar.svg" width="100%" alt="Core technical expertise radar" />
+</p>
+
+<p align="center"><sub>Click a skill to see the repos that use it</sub><br/>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Apython&type=repositories" title="Repos built with Python"><img src="https://img.shields.io/badge/Python-96%25-36BCF7?style=for-the-badge&logo=python&logoColor=white&labelColor=0f2027" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Apyspark&type=repositories" title="Repos using PySpark"><img src="https://img.shields.io/badge/PySpark-94%25-36BCF7?style=for-the-badge&logo=apachespark&logoColor=white&labelColor=0f2027" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Abigquery&type=repositories" title="Repos using SQL on BigQuery"><img src="https://img.shields.io/badge/SQL%20%2F%20BigQuery-95%25-36BCF7?style=for-the-badge&logo=googlebigquery&logoColor=white&labelColor=0f2027" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Adashboard&type=repositories" title="Dashboard projects"><img src="https://img.shields.io/badge/Dashboards-98%25-36BCF7?style=for-the-badge&logo=powerbi&logoColor=white&labelColor=0f2027" /></a>
+  <br/>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Agcp&type=repositories" title="Repos on Google Cloud"><img src="https://img.shields.io/badge/Cloud%20(GCP)-88%25-36BCF7?style=for-the-badge&logo=googlecloud&logoColor=white&labelColor=0f2027" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Amachine-learning&type=repositories" title="Machine learning and deep learning repos"><img src="https://img.shields.io/badge/ML%20%2F%20DL-92%25-36BCF7?style=for-the-badge&logo=scikitlearn&logoColor=white&labelColor=0f2027" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Aworkflow-automation&type=repositories" title="n8n and workflow automation repos"><img src="https://img.shields.io/badge/n8n%20%2F%20Workflows-80%25-36BCF7?style=for-the-badge&logo=n8n&logoColor=white&labelColor=0f2027" /></a>
+</p>
 
 <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
 ## Featured Projects
@@ -170,6 +180,10 @@ WHERE  coffee_level > 0
 
 <!-- ═══════════════════════════ STATS ═══════════════════════════ -->
 ## GitHub Telemetry
+
+<p align="center">
+  <img src="assets/commit-trend.svg" width="100%" alt="Monthly contribution trend, last 12 months" />
+</p>
 
 <table align="center">
   <tr>
