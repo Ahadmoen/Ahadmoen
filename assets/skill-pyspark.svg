@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="153" height="36" viewBox="0 0 153 36">
 <defs>
-  <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".15"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
   <clipPath id="c"><rect width="153" height="36" rx="8"/></clipPath>
 </defs>
 <g clip-path="url(#c)">
   <rect width="153" height="36" fill="#000000"/>
-  <rect x="91" width="62" height="36" fill="#36BCF7"/>
-  <circle cx="17" cy="18" r="4" fill="#36BCF7"><animate attributeName="opacity" values="1;.3;1" dur="2s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <rect x="91" width="62" height="36" fill="#2c5364"/>
+  <circle cx="17" cy="18" r="4" fill="#4f93ad"><animate attributeName="opacity" values="1;.3;1" dur="2s" begin="0.3s" repeatCount="indefinite"/></circle>
   <text x="29" y="23" style="font-family:Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;font-size:13px;font-weight:600;fill:#e6edf3">PySpark</text>
-  <text x="122" y="23" text-anchor="middle" style="font-family:Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;font-size:13px;font-weight:800;fill:#000000">94%</text>
+  <text x="122" y="23" text-anchor="middle" style="font-family:Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;font-size:13px;font-weight:700;fill:#e6edf3">94%</text>
   <rect x="-80" width="60" height="36" fill="url(#shine)" transform="skewX(-20)">
     <animate attributeName="x" values="-80;213;213" keyTimes="0;.35;1" dur="5s" begin="0.6s" repeatCount="indefinite"/>
   </rect>
 </g>
-<rect x=".5" y=".5" width="152" height="35" rx="8" fill="none" stroke="#36BCF7" stroke-opacity=".6"/>
+<rect x=".5" y=".5" width="152" height="35" rx="8" fill="none" stroke="#4f93ad" stroke-opacity=".6"/>
 </svg>

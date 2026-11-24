@@ -18,7 +18,8 @@ USER = "Ahadmoen"
 OUT = Path(__file__).resolve().parent.parent / "assets"
 
 BG1, BG2 = "#000000", "#000000"
-ACCENT = "#36BCF7"
+ACCENT = "#4f93ad"          # soft teal, matches the header banner
+ACCENT_FILL = "#2c5364"     # header banner end colour
 TEXT = "#e6edf3"
 MUTED = "#9fb3c8"
 GRID = "#1f2a33"
@@ -267,7 +268,7 @@ def impact_svg():
             last = k == len(frames) - 1
             show = f'<set attributeName="opacity" to="1" begin="{on:.2f}s"/>'
             hide = "" if last else f'<set attributeName="opacity" to="0" begin="{on+step:.2f}s"/>'
-            style = f'fill:{ACCENT if last else MUTED};font-size:32px;font-weight:600;letter-spacing:.5px'
+            style = f'fill:{TEXT if last else MUTED};font-size:32px;font-weight:600;letter-spacing:.5px'
             glow = ""
             tile += (
                 f'<text x="{cx:.1f}" y="{top+66}" text-anchor="middle" opacity="0" style="{style}"{glow}>'
@@ -291,15 +292,15 @@ def skill_button_svg(i, label, level):
     lw = w - 62
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w:.0f}" height="{h}" viewBox="0 0 {w:.0f} {h}">
 <defs>
-  <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".15"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
   <clipPath id="c"><rect width="{w:.0f}" height="{h}" rx="8"/></clipPath>
 </defs>
 <g clip-path="url(#c)">
   <rect width="{w:.0f}" height="{h}" fill="{BG1}"/>
-  <rect x="{lw:.0f}" width="62" height="{h}" fill="{ACCENT}"/>
+  <rect x="{lw:.0f}" width="62" height="{h}" fill="{ACCENT_FILL}"/>
   <circle cx="17" cy="18" r="4" fill="{ACCENT}"><animate attributeName="opacity" values="1;.3;1" dur="2s" begin="{i*0.3:.1f}s" repeatCount="indefinite"/></circle>
   <text x="29" y="23" style="font-family:{FONT};font-size:13px;font-weight:600;fill:{TEXT}">{label}</text>
-  <text x="{lw+31:.0f}" y="23" text-anchor="middle" style="font-family:{FONT};font-size:13px;font-weight:800;fill:{BG1}">{level}%</text>
+  <text x="{lw+31:.0f}" y="23" text-anchor="middle" style="font-family:{FONT};font-size:13px;font-weight:700;fill:{TEXT}">{level}%</text>
   <rect x="-80" width="60" height="{h}" fill="url(#shine)" transform="skewX(-20)">
     <animate attributeName="x" values="-80;{w+60:.0f};{w+60:.0f}" keyTimes="0;.35;1" dur="5s" begin="{i*0.6:.1f}s" repeatCount="indefinite"/>
   </rect>
