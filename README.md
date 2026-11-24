@@ -208,8 +208,8 @@
 <!-- Animated contribution snake: generated daily by .github/workflows/snake.yml into the "output" branch -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/output/github-snake-dark.svg" />
-    <img alt="contribution snake" src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/output/github-snake.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/output/github-snake-dark.svg?v=2" />
+    <img alt="contribution snake" src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/output/github-snake.svg?v=2" width="100%" />
   </picture>
 </p>
 
@@ -226,5 +226,5 @@
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer&animation=twinkling" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=120&section=footer&animation=twinkling" width="100%" />
 </p>
