@@ -28,42 +28,42 @@
 ## About Me
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/about-sql.svg?v=3" width="100%" alt="SELECT * FROM ahad_moeen" />
+  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/about-sql.svg?v=4" width="100%" alt="SELECT * FROM ahad_moeen" />
 </p>
 
 <!-- ═══════════════════════════ IMPACT ═══════════════════════════ -->
 ## Impact Dashboard
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/impact.svg?v=3" width="100%" alt="16M+ records · 168/168 periods matched · 0.3% variance · +28% accuracy" />
+  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/impact.svg?v=4" width="100%" alt="16M+ records · 168/168 periods matched · 0.3% variance · +28% accuracy" />
 </p>
 
 <!-- ═══════════════════════════ PIPELINE ═══════════════════════════ -->
 ## How I Work
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/pipeline-flow.svg?v=3" width="100%" alt="Sources → Ingest → Warehouse → Decisions" />
+  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/pipeline-flow.svg?v=4" width="100%" alt="Sources → Ingest → Warehouse → Decisions" />
 </p>
 
 <!-- ═══════════════════════════ EXPERTISE ═══════════════════════════ -->
 ## Core Expertise
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/expertise-radar.svg?v=3" width="100%" alt="Core technical expertise radar" />
+  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/expertise-radar.svg?v=4" width="100%" alt="Core technical expertise radar" />
 </p>
 
 <br/>
 <p align="center"><sub>Click a skill to see the repos that use it</sub></p>
 
 <p align="center">
-  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Apython&type=repositories" title="Repos built with Python"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-python.svg?v=3" height="36" alt="Python" /></a>
-  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Apyspark&type=repositories" title="Repos using PySpark"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-pyspark.svg?v=3" height="36" alt="PySpark" /></a>
-  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Abigquery&type=repositories" title="Repos using SQL on BigQuery"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-bigquery.svg?v=3" height="36" alt="SQL%20%2F%20BigQuery" /></a>
-  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Adashboard&type=repositories" title="Dashboard projects"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-dashboards.svg?v=3" height="36" alt="Dashboards" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Apython&type=repositories" title="Repos built with Python"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-python.svg?v=4" height="36" alt="Python" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Apyspark&type=repositories" title="Repos using PySpark"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-pyspark.svg?v=4" height="36" alt="PySpark" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Abigquery&type=repositories" title="Repos using SQL on BigQuery"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-bigquery.svg?v=4" height="36" alt="SQL%20%2F%20BigQuery" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Adashboard&type=repositories" title="Dashboard projects"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-dashboards.svg?v=4" height="36" alt="Dashboards" /></a>
   <br/>
-  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Agcp&type=repositories" title="Repos on Google Cloud"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-gcp.svg?v=3" height="36" alt="Cloud%20(GCP)" /></a>
-  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Amachine-learning&type=repositories" title="Machine learning and deep learning repos"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-ml.svg?v=3" height="36" alt="ML%20%2F%20DL" /></a>
-  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Aworkflow-automation&type=repositories" title="n8n and workflow automation repos"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-workflows.svg?v=3" height="36" alt="n8n%20%2F%20Workflows" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Agcp&type=repositories" title="Repos on Google Cloud"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-gcp.svg?v=4" height="36" alt="Cloud%20(GCP)" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Amachine-learning&type=repositories" title="Machine learning and deep learning repos"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-ml.svg?v=4" height="36" alt="ML%20%2F%20DL" /></a>
+  <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Aworkflow-automation&type=repositories" title="n8n and workflow automation repos"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-workflows.svg?v=4" height="36" alt="n8n%20%2F%20Workflows" /></a>
 </p>
 
 <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
@@ -167,7 +167,7 @@
 ## GitHub Telemetry
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/commit-trend.svg?v=3" width="100%" alt="Monthly contribution trend, last 12 months" />
+  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/commit-trend.svg?v=4" width="100%" alt="Monthly contribution trend, last 12 months" />
 </p>
 
 <table align="center">
@@ -208,8 +208,8 @@
 <!-- Animated contribution snake: generated daily by .github/workflows/snake.yml into the "output" branch -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/output/github-snake-dark.svg?v=3" />
-    <img alt="contribution snake" src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/output/github-snake.svg?v=3" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/output/github-snake-dark.svg?v=4" />
+    <img alt="contribution snake" src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/output/github-snake.svg?v=4" width="100%" />
   </picture>
 </p>
 
@@ -217,7 +217,7 @@
 ## Let's Connect
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/contact.svg?v=3" width="100%" alt="Contact: moenahad@gmail.com, ahadmoeeen@gmail.com, linkedin.com/in/ahad-moen" />
+  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/contact.svg?v=4" width="100%" alt="Contact: moenahad@gmail.com, ahadmoeeen@gmail.com, linkedin.com/in/ahad-moen" />
 </p>
 
 <p align="center">
