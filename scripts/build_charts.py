@@ -17,11 +17,11 @@ from pathlib import Path
 USER = "Ahadmoen"
 OUT = Path(__file__).resolve().parent.parent / "assets"
 
-BG1, BG2 = "#0f2027", "#203a43"
+BG1, BG2 = "#000000", "#000000"
 ACCENT = "#36BCF7"
 TEXT = "#e6edf3"
 MUTED = "#9fb3c8"
-GRID = "#2c5364"
+GRID = "#1f2a33"
 FONT = "Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif"
 
 EXPERTISE = [  # (label, level %)
@@ -267,8 +267,8 @@ def impact_svg():
             last = k == len(frames) - 1
             show = f'<set attributeName="opacity" to="1" begin="{on:.2f}s"/>'
             hide = "" if last else f'<set attributeName="opacity" to="0" begin="{on+step:.2f}s"/>'
-            style = f'fill:{TEXT if last else ACCENT};font-size:30px;font-weight:700'
-            glow = ' filter="url(#glow)"' if last else ""
+            style = f'fill:{ACCENT if last else MUTED};font-size:32px;font-weight:600;letter-spacing:.5px'
+            glow = ""
             tile += (
                 f'<text x="{cx:.1f}" y="{top+66}" text-anchor="middle" opacity="0" style="{style}"{glow}>'
                 f'{show}{hide}{label}</text>'
@@ -309,9 +309,101 @@ def skill_button_svg(i, label, level):
 """
 
 
+# ---------------------------------------------------------------- code cards
+import re as _re
+from xml.sax.saxutils import escape as _esc
+
+KW = {"SELECT", "FROM", "WHERE", "AND", "AS", "TRUE"}
+TOK = _re.compile(r"(--.*|#.*$|'[^']*'|\"[^\"]*\"|>>>|\b\d+\b|\b[A-Za-z_]+\b|\s+|.)")
+COL = {"kw": "#ff7b72", "str": "#a5d6ff", "com": "#8b949e", "num": "#79c0ff", "fn": "#d2a8ff", "txt": "#e6edf3"}
+
+
+def _color(tok):
+    if tok.startswith("--") or tok.startswith("#"):
+        return "com"
+    if tok[:1] in "'\"":
+        return "str"
+    if tok in KW:
+        return "kw"
+    if tok == ">>>":
+        return "kw"
+    if tok.isdigit():
+        return "num"
+    if tok == "contact":
+        return "fn"
+    return "txt"
+
+
+def code_card(lines, label, start=0.3, per_line=0.18):
+    lh, top, left = 21, 62, 28
+    W = 900
+    H = top + len(lines) * lh + 28
+    clips, rows = "", ""
+    for i, line in enumerate(lines):
+        y = top + i * lh
+        t = start + i * per_line
+        spans = "".join(
+            f'<tspan fill="{COL[_color(tok)]}">{_esc(tok)}</tspan>' for tok in TOK.findall(line)
+        )
+        clips += (
+            f'<clipPath id="r{i}"><rect x="{left-4}" y="{y-15}" width="0" height="{lh}">'
+            f'<animate attributeName="width" from="0" to="{W-2*left}" dur="0.45s" begin="{t:.2f}s" fill="freeze"/>'
+            f"</rect></clipPath>"
+        )
+        rows += f'<text x="{left}" y="{y}" clip-path="url(#r{i})" xml:space="preserve" class="code">{spans}</text>'
+    end = start + len(lines) * per_line + 0.3
+    cy = top + (len(lines) - 1) * lh
+    cursor = (
+        f'<rect x="{left}" y="{cy+8}" width="9" height="3" fill="{ACCENT}" opacity="0">'
+        f'<set attributeName="opacity" to="1" begin="{end:.2f}s"/>'
+        f'<animate attributeName="opacity" values="1;0;1" dur="1s" begin="{end:.2f}s" repeatCount="indefinite"/></rect>'
+    )
+    chrome = (
+        '<circle cx="28" cy="26" r="6" fill="#ff5f56"/><circle cx="48" cy="26" r="6" fill="#ffbd2e"/>'
+        '<circle cx="68" cy="26" r="6" fill="#27c93f"/>'
+        f'<text x="{W/2}" y="31" text-anchor="middle" class="m">{label}</text>'
+        f'<line x1="1" y1="44" x2="{W-1}" y2="44" stroke="{GRID}"/>'
+    )
+    body = (
+        "<style>.code{font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px}</style>"
+        f"<defs>{clips}</defs>{chrome}{rows}{cursor}"
+    )
+    return frame(W, H, body)
+
+
+SQL_LINES = [
+    "-- One row, many columns. Last refreshed: today.",
+    "SELECT",
+    "    'Ahad Moeen'                                  AS name,",
+    "    'Data Analytics Engineer @ Buildberg'         AS current_role,",
+    "    'ETL/ELT, SQL modelling, BI, Forecasting'     AS focus_areas,",
+    "    'AI agents on warehouses'                     AS specialty,",
+    "    'Turn messy raw data into trusted decisions'  AS mission,",
+    "    'Databricks, RAG + LLM evals, DataOps'        AS currently_learning,",
+    "    'BBIT, University of the Punjab (CGPA 3.72)'  AS education,",
+    "    TRUE                                          AS open_to_opportunities",
+    "FROM   engineers",
+    "WHERE  coffee_level > 0",
+    "  AND  pipelines_status = 'green';",
+]
+
+CONTACT_LINES = [
+    ">>> ahad.contact()",
+    "{",
+    '    "email":     ["moenahad@gmail.com", "ahadmoeeen@gmail.com"],',
+    '    "linkedin":  "linkedin.com/in/ahad-moen",',
+    '    "portfolio": "ahadmoeen.netlify.app/projects",',
+    '    "open_to":   ["Data Engineering", "Analytics Engineering", "AI / Data roles"],',
+    '    "work_mode": "remote-friendly",',
+    "}",
+]
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     (OUT / "impact.svg").write_text(impact_svg(), encoding="utf-8")
+    (OUT / "about-sql.svg").write_text(code_card(SQL_LINES, "ahad_moeen.sql"), encoding="utf-8")
+    (OUT / "contact.svg").write_text(code_card(CONTACT_LINES, "contact.py"), encoding="utf-8")
     for i, (key, label, level) in enumerate(SKILL_BTN):
         (OUT / f"skill-{key}.svg").write_text(skill_button_svg(i, label, level), encoding="utf-8")
     (OUT / "expertise-radar.svg").write_text(radar_svg(), encoding="utf-8")

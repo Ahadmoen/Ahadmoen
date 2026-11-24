@@ -25,24 +25,11 @@
 </p>
 
 <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
-## `SELECT * FROM ahad_moeen;`
+## About Me
 
-```sql
--- One row, many columns. Last refreshed: today.
-SELECT
-    'Ahad Moeen'                                         AS name,
-    'Data Analytics Engineer @ Buildberg'                AS current_role,
-    ['ETL/ELT', 'SQL modelling', 'BI', 'Forecasting',
-     'AI agents on warehouses']                          AS focus_areas,
-    'Turn messy raw data into trusted decisions'         AS mission,
-    ['Databricks / Delta Lake', 'RAG + LLM evals',
-     'Terraform + DataOps']                              AS currently_learning,
-    'BBIT, University of the Punjab (CGPA 3.72)'         AS education,
-    TRUE                                                 AS open_to_opportunities
-FROM   engineers
-WHERE  coffee_level > 0
-  AND  pipelines_status = 'green';
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/about-sql.svg" width="100%" alt="SELECT * FROM ahad_moeen" />
+</p>
 
 <!-- ═══════════════════════════ IMPACT ═══════════════════════════ -->
 ## Impact Dashboard
@@ -65,7 +52,10 @@ WHERE  coffee_level > 0
   <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/expertise-radar.svg" width="100%" alt="Core technical expertise radar" />
 </p>
 
-<p align="center"><sub>Click a skill to see the repos that use it</sub><br/>
+<br/>
+<p align="center"><sub>Click a skill to see the repos that use it</sub></p>
+
+<p align="center">
   <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Apython&type=repositories" title="Repos built with Python"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-python.svg" height="36" alt="Python" /></a>
   <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Apyspark&type=repositories" title="Repos using PySpark"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-pyspark.svg" height="36" alt="PySpark" /></a>
   <a href="https://github.com/search?q=user%3AAhadmoen+topic%3Abigquery&type=repositories" title="Repos using SQL on BigQuery"><img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/skill-bigquery.svg" height="36" alt="SQL%20%2F%20BigQuery" /></a>
@@ -183,10 +173,10 @@ WHERE  coffee_level > 0
 <table align="center">
   <tr>
     <td width="600" align="center">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api?username=Ahadmoen&show_icons=true&hide_border=true&hide_rank=true&count_private=true&include_all_commits=true&hide=stars,issues,contribs&show=prs_merged&card_width=440&bg_color=0f2027&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&custom_title=Pipeline%20Throughput" />
+      <img width="100%" src="https://github-readme-stats.vercel.app/api?username=Ahadmoen&show_icons=true&hide_border=true&hide_rank=true&count_private=true&include_all_commits=true&hide=stars,issues,contribs&show=prs_merged&card_width=440&bg_color=000000&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&custom_title=Pipeline%20Throughput" />
     </td>
     <td width="600" align="center">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ahadmoen&layout=compact&langs_count=6&hide=html,css&card_width=440&hide_border=true&bg_color=0f2027&title_color=36BCF7&text_color=ffffff&custom_title=Language%20Distribution" />
+      <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ahadmoen&layout=compact&langs_count=6&hide=html,css&card_width=440&hide_border=true&bg_color=000000&title_color=36BCF7&text_color=ffffff&custom_title=Language%20Distribution" />
     </td>
   </tr>
   <tr>
@@ -194,23 +184,23 @@ WHERE  coffee_level > 0
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/Ahadmoen/ai-reporting-agent-bigquery"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=Ahadmoen&repo=ai-reporting-agent-bigquery&hide_border=true&bg_color=0f2027&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&description_lines_count=2" /></a>
+      <a href="https://github.com/Ahadmoen/ai-reporting-agent-bigquery"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=Ahadmoen&repo=ai-reporting-agent-bigquery&hide_border=true&bg_color=000000&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&description_lines_count=2" /></a>
     </td>
     <td align="center">
-      <a href="https://github.com/Ahadmoen/Automated-Ads-Analytics"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=Ahadmoen&repo=Automated-Ads-Analytics&hide_border=true&bg_color=0f2027&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&description_lines_count=2" /></a>
+      <a href="https://github.com/Ahadmoen/Automated-Ads-Analytics"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=Ahadmoen&repo=Automated-Ads-Analytics&hide_border=true&bg_color=000000&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&description_lines_count=2" /></a>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/Ahadmoen/production-airflow-sales-pipeline"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=Ahadmoen&repo=production-airflow-sales-pipeline&hide_border=true&bg_color=0f2027&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&description_lines_count=2" /></a>
+      <a href="https://github.com/Ahadmoen/production-airflow-sales-pipeline"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=Ahadmoen&repo=production-airflow-sales-pipeline&hide_border=true&bg_color=000000&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&description_lines_count=2" /></a>
     </td>
     <td align="center">
-      <a href="https://github.com/Ahadmoen/Shopify_ETL_Apache_Spark"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=Ahadmoen&repo=Shopify_ETL_Apache_Spark&hide_border=true&bg_color=0f2027&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&description_lines_count=2" /></a>
+      <a href="https://github.com/Ahadmoen/Shopify_ETL_Apache_Spark"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=Ahadmoen&repo=Shopify_ETL_Apache_Spark&hide_border=true&bg_color=000000&title_color=36BCF7&icon_color=36BCF7&text_color=ffffff&description_lines_count=2" /></a>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ahadmoen&bg_color=0f2027&color=ffffff&line=36BCF7&point=ffffff&area=true&area_color=36BCF7&hide_border=true&title_color=36BCF7&custom_title=Commit%20Activity%20%E2%80%94%20Last%2031%20Days" />
+      <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ahadmoen&bg_color=000000&color=ffffff&line=36BCF7&point=ffffff&area=true&area_color=36BCF7&hide_border=true&title_color=36BCF7&custom_title=Commit%20Activity%20%E2%80%94%20Last%2031%20Days" />
     </td>
   </tr>
 </table>
@@ -226,16 +216,9 @@ WHERE  coffee_level > 0
 <!-- ═══════════════════════════ CONNECT ═══════════════════════════ -->
 ## Let's Connect
 
-```python
->>> ahad.contact()
-{
-    "email":      ["moenahad@gmail.com", "ahadmoeeen@gmail.com"],
-    "linkedin":   "linkedin.com/in/ahad-moen",
-    "portfolio":  "ahadmoeen.netlify.app/projects",
-    "open_to":    ["Data Engineering", "Analytics Engineering", "AI / Data roles"],
-    "work_mode":  "remote-friendly",
-}
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Ahadmoen/Ahadmoen/main/assets/contact.svg" width="100%" alt="Contact: moenahad@gmail.com, ahadmoeeen@gmail.com, linkedin.com/in/ahad-moen" />
+</p>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Georgia&style=italic&size=18&duration=4500&pause=3000&color=C9D6E3&center=true&vCenter=true&repeat=true&width=700&height=50&lines=%22In+God+we+trust.+All+others+must+bring+data.%22" alt="In God we trust. All others must bring data." /><br/>
