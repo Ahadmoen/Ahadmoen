@@ -231,8 +231,89 @@ def pipeline_svg():
     return frame(W, H, body)
 
 
+# ---------------------------------------------------------------- impact tiles
+IMPACT = [  # (final label, count-up frames, caption line 1, caption line 2, fill fraction)
+    ("16M+", ["2M", "5M", "8M", "11M", "14M", "16M+"], "retail records", "processed (PySpark)", 1.0),
+    ("168/168", ["24/168", "60/168", "96/168", "132/168", "160/168", "168/168"], "audited periods", "matched by AI agent", 1.0),
+    ("0.3%", ["5.0%", "3.1%", "1.8%", "0.9%", "0.5%", "0.3%"], "max revenue", "variance (5 stores)", 0.997),
+    ("+28%", ["+4%", "+9%", "+15%", "+20%", "+25%", "+28%"], "inventory-planning", "accuracy gain", 0.28),
+]
+
+
+def impact_svg():
+    W, H = 900, 190
+    n = len(IMPACT)
+    gap, pad = 16, 20
+    tw = (W - 2 * pad - (n - 1) * gap) / n
+    th, top = 150, 20
+    body = ""
+    for i, (final, frames, c1, c2, frac) in enumerate(IMPACT):
+        x = pad + i * (tw + gap)
+        cx = x + tw / 2
+        d0 = 0.15 + i * 0.2
+        tile = (
+            f'<rect x="{x:.1f}" y="{top}" width="{tw:.1f}" height="{th}" rx="12" fill="{BG1}" stroke="{ACCENT}" stroke-opacity=".55"/>'
+            f'<rect x="{x+18:.1f}" y="{top+92}" width="{tw-36:.1f}" height="4" rx="2" fill="{GRID}"/>'
+            f'<rect x="{x+18:.1f}" y="{top+92}" width="0" height="4" rx="2" fill="{ACCENT}">'
+            f'<animate attributeName="width" from="0" to="{(tw-36)*frac:.1f}" dur="1.2s" begin="{d0+0.2:.2f}s" fill="freeze" '
+            f'calcMode="spline" keySplines=".2 .8 .2 1" keyTimes="0;1"/></rect>'
+            f'<text x="{cx:.1f}" y="{top+122}" text-anchor="middle" class="s">{c1}</text>'
+            f'<text x="{cx:.1f}" y="{top+140}" text-anchor="middle" class="s">{c2}</text>'
+        )
+        # count-up: each frame text is shown for a moment, the last one stays
+        step = 0.16
+        for k, label in enumerate(frames):
+            on = d0 + 0.2 + k * step
+            last = k == len(frames) - 1
+            show = f'<set attributeName="opacity" to="1" begin="{on:.2f}s"/>'
+            hide = "" if last else f'<set attributeName="opacity" to="0" begin="{on+step:.2f}s"/>'
+            style = f'fill:{TEXT if last else ACCENT};font-size:30px;font-weight:700'
+            glow = ' filter="url(#glow)"' if last else ""
+            tile += (
+                f'<text x="{cx:.1f}" y="{top+66}" text-anchor="middle" opacity="0" style="{style}"{glow}>'
+                f'{show}{hide}{label}</text>'
+            )
+        body += f'<g class="fade" style="animation-delay:{d0:.2f}s">{tile}</g>'
+    return frame(W, H, body)
+
+
+# ---------------------------------------------------------------- skill buttons
+SKILL_BTN = [  # (file key, label, level)
+    ("python", "Python", 96), ("pyspark", "PySpark", 94), ("bigquery", "SQL / BigQuery", 95),
+    ("dashboards", "Dashboards", 98), ("gcp", "Cloud (GCP)", 88), ("ml", "ML / DL", 92),
+    ("workflows", "n8n / Workflows", 80),
+]
+
+
+def skill_button_svg(i, label, level):
+    w = 34 + len(label) * 8.2 + 62
+    h = 36
+    lw = w - 62
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w:.0f}" height="{h}" viewBox="0 0 {w:.0f} {h}">
+<defs>
+  <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <clipPath id="c"><rect width="{w:.0f}" height="{h}" rx="8"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+  <rect width="{w:.0f}" height="{h}" fill="{BG1}"/>
+  <rect x="{lw:.0f}" width="62" height="{h}" fill="{ACCENT}"/>
+  <circle cx="17" cy="18" r="4" fill="{ACCENT}"><animate attributeName="opacity" values="1;.3;1" dur="2s" begin="{i*0.3:.1f}s" repeatCount="indefinite"/></circle>
+  <text x="29" y="23" style="font-family:{FONT};font-size:13px;font-weight:600;fill:{TEXT}">{label}</text>
+  <text x="{lw+31:.0f}" y="23" text-anchor="middle" style="font-family:{FONT};font-size:13px;font-weight:800;fill:{BG1}">{level}%</text>
+  <rect x="-80" width="60" height="{h}" fill="url(#shine)" transform="skewX(-20)">
+    <animate attributeName="x" values="-80;{w+60:.0f};{w+60:.0f}" keyTimes="0;.35;1" dur="5s" begin="{i*0.6:.1f}s" repeatCount="indefinite"/>
+  </rect>
+</g>
+<rect x=".5" y=".5" width="{w-1:.0f}" height="{h-1}" rx="8" fill="none" stroke="{ACCENT}" stroke-opacity=".6"/>
+</svg>
+"""
+
+
 def main():
     OUT.mkdir(exist_ok=True)
+    (OUT / "impact.svg").write_text(impact_svg(), encoding="utf-8")
+    for i, (key, label, level) in enumerate(SKILL_BTN):
+        (OUT / f"skill-{key}.svg").write_text(skill_button_svg(i, label, level), encoding="utf-8")
     (OUT / "expertise-radar.svg").write_text(radar_svg(), encoding="utf-8")
     (OUT / "pipeline-flow.svg").write_text(pipeline_svg(), encoding="utf-8")
     (OUT / "commit-trend.svg").write_text(trend_svg(fetch_monthly()), encoding="utf-8")
